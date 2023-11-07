@@ -16,8 +16,8 @@ const projectsData = [
   },
   {
     id: 2,
-    title: "Mapa de calor",
-    description: "Obtenha informação visual agregada sobre o movimentação de pessoas e horas de pico nos locais do estabelecimento.",
+    title: "Detecção de zonas quentes",
+    description: "Obtenha informação visual agregada sobre o movimentação de pessoas e horas de pico nos locais do estabelecimento, através de mapas de calor.",
     image: "/images/caracteristicas/heatmap.gif",
     tag: ["Todas", "Acurácia"],
     gitUrl: "/",
@@ -34,8 +34,8 @@ const projectsData = [
   },
   {
     id: 4,
-    title: "Dashboard",
-    description: "Todos os dados são acessíveis facilmente através de uma dashboard web.",
+    title: "Visualização de dados",
+    description: "Todos os dados são facilmente acessíveis em tempo real através de uma dashboard web.",
     image: "https://meshed.com.au/wp-content/uploads/2022/08/Dashboard-2.png",
     tag: ["Todas", "Dashboard"],
     gitUrl: "/",

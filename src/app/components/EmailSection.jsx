@@ -51,7 +51,7 @@ const EmailSection = () => {
         </h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
           {" "}
-          Estamos no processo de aprimoramento contínuo do nosso produto para garantir que atenda às mais altas expectativas. Seja um dos primeiros a ter acesso a esta inovação. Entre em contato para ficar por dentro do desenvolvimento do nosso produto e receber atualizações exclusivas sobre o seu lançamento.
+          Estamos no processo de aprimoramento contínuo do nosso produto para garantir que atenda às mais altas expectativas. Seja um dos primeiros a ter acesso ao NimbusVision ProX. Entre em contato para ficar por dentro do desenvolvimento do nosso produto e receber atualizações exclusivas sobre o seu lançamento.
         </p>
         <div className="socials flex flex-row gap-2">
           <Link href="github.com">
