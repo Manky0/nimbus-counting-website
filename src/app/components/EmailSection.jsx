@@ -12,8 +12,8 @@ const EmailSection = () => {
     e.preventDefault();
     const data = {
       email: e.target.email.value,
-      subject: e.target.subject.value,
-      message: e.target.message.value,
+      subject: 'Interesse em NimbusVision ProX',
+      message: e.target.name.value,
     };
     const JSONdata = JSON.stringify(data);
     const endpoint = "/api/send";
@@ -65,7 +65,7 @@ const EmailSection = () => {
       <div>
         {emailSubmitted ? (
           <p className="text-green-500 text-sm mt-2">
-            Email sent successfully!
+            Enviado com sucesso!
           </p>
         ) : (
           <form className="flex flex-col" onSubmit={handleSubmit}>
