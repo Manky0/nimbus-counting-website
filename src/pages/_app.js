@@ -3,7 +3,7 @@ console.log('test')
 const App = ({ Component, pageProps }) => {
   return (
     <>
-      <GoogleAnalytics trackPageViews />
+      <GoogleAnalytics trackPageViews gaMeasurementId='G-R3J9004T8N' />
       <Component {...pageProps} />
     </>
   );
