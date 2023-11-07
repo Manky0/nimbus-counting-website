@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'NimbusVision',
-  description: 'NimbusVision ProX',
+  description: 'Solução inteligente para contagem de pessoas',
 }
 
 export default function RootLayout({ children }) {
