@@ -7,54 +7,54 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Acuráciasite",
-    description: "Project 1 description",
-    image: "/images/projects/1.png",
+    title: "Contagem de pessoas",
+    description: "Conte automaticamente a quantidade de pessoas que passam pelo seu estabelecimento.",
+    image: "/images/caracteristicas/people_counting.png",
     tag: ["Todas", "Acurácia"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
     id: 2,
-    title: "Potography Portfolio Acuráciasite",
-    description: "Project 2 description",
-    image: "/images/projects/2.png",
+    title: "Mapa de calor",
+    description: "Obtenha informação visual agregada sobre o movimentação de pessoas e horas de pico nos locais do estabelecimento.",
+    image: "/images/caracteristicas/heatmap.gif",
     tag: ["Todas", "Acurácia"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
     id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
-    image: "/images/projects/3.png",
+    title: "Detecção de multidões",
+    description: "Estime o tamanho e possiveis acidentes causados por grandes grupos de pessoas.",
+    image: "https://venturebeat.com/wp-content/uploads/2017/11/rekognition-face-detection-3.jpg?w=1200&strip=all",
     tag: ["Todas", "Acurácia"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
     id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
-    image: "/images/projects/4.png",
+    title: "Dashboard",
+    description: "Todos os dados são acessíveis facilmente através de uma dashboard web.",
+    image: "https://meshed.com.au/wp-content/uploads/2022/08/Dashboard-2.png",
     tag: ["Todas", "Dashboard"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
     id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
-    image: "/images/projects/5.png",
+    title: "Geração de relatórios",
+    description: "Geração automática de relatórios, permitindo exportação para outras plataformas.",
+    image: "https://peoplecounter.io/cdn/shop/files/PeopleCounter-Report-Shops-09-2023.png?v=1697957932&width=1946",
     tag: ["Todas", "Acurácia"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
     id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
-    image: "/images/projects/6.png",
+    title: "Alarmes",
+    description: "Tenha alarmes para eventos críticos, como invasões, superlotação, etc...",
+    image: "https://cdn.pixabay.com/photo/2021/11/06/05/25/alarm-symbol-6772461_1280.png",
     tag: ["Todas", "Acurácia"],
     gitUrl: "/",
     previewUrl: "/",
@@ -81,27 +81,10 @@ const AdvantagesSection = () => {
 
   return (
     <section id="vantagens">
-      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-4 md:mb-5">
-        Vantagens
+      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-4 md:mb-14">
+        Principais características
       </h2>
-      <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
-        <ProjectTag
-          onClick={handleTagChange}
-          name="Todas"
-          isSelected={tag === "Todas"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="Acurácia"
-          isSelected={tag === "Acurácia"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="Dashboard"
-          isSelected={tag === "Dashboard"}
-        />
-      </div>
-      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
+      <ul ref={ref} className="grid md:grid-cols-2 gap-8 md:gap-12">
         {filteredProjects.map((project, index) => (
           <motion.li
             key={index}

@@ -28,10 +28,12 @@ export default function Home() {
         <AchievementsSection />
         <ApplicationsSection />
         <AdvantagesSection />
-        <AboutCompany/>
+        {/* <AboutCompany/> */}
         <EmailSection />
       </div>
+      <div className="container mt-24 mx-auto px-12 py-4">
       <Footer />
+      </div>
     </main>
   );
 }
