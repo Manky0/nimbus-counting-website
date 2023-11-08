@@ -8,6 +8,10 @@ import Image from "next/image";
 
 const navLinks = [
   {
+    title: 'Início',
+    path: '#'
+  },
+  {
     title: "Aplicações",
     path: "#aplicacoes",
   },
@@ -15,10 +19,10 @@ const navLinks = [
     title: "Vantagens",
     path: "#vantagens",
   },
-  {
-    title: "Empresa",
-    path: "#empresa",
-  },
+  // {
+  //   title: "Empresa",
+  //   path: "#empresa",
+  // },
   {
     title: "Contato",
     path: "#contato"
